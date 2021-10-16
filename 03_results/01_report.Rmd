@@ -1,0 +1,25 @@
+---
+title: "Report Title"
+author: "Jason Pott"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    theme: paper
+    highlight: tango
+    toc: true
+    toc_float: true
+---
+
+```{r setup,echo=FALSE, include=TRUE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+```{r source, echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+library(here)
+source(here::here("01_src", "01_initialise.R"))
+source(here::here("01_src", "02_data_import.R"))
+source(here::here("01_src", "03_wrangle.R"))
+source(here::here("01_src", "04_analysis.R"))
+source(here::here("01_src", "05_figures.R"))
+```
