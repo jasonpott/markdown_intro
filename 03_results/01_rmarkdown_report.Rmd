@@ -1,6 +1,6 @@
 ---
 title: "Report Title"
-author: "Author Name"
+author: "Author"
 date: "`r Sys.Date()`"
 output:
   html_document:

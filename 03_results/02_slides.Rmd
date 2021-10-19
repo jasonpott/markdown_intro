@@ -1,19 +1,18 @@
 ---
-title: "Report Title"
-author: "Author Name"
-date: "`r Sys.Date()`"
+title: "Presentation Ninja"
+subtitle: "⚔<br/>with xaringan"
+author: "Yihui Xie"
+institute: "RStudio, PBC"
+date: "2016/12/12 (updated: `r Sys.Date()`)"
 output:
-  html_document:
-    theme: paper
-    highlight: tango
-    toc: true
-    toc_float: true
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
 ---
 
-```{r setup,echo=FALSE, include=TRUE}
-knitr::opts_chunk$set(echo = FALSE)
-knitr::opts_chunk$set(message = FALSE, warning = FALSE)
-```
 
 ```{r source, echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
 library(here)
@@ -24,6 +23,13 @@ source(here::here("01_src", "04_analysis.R"))
 source(here::here("01_src", "05_figures.R"))
 ```
 
+```{r, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.height=8, fig.width=8, fig.retina=2}
+
+```
+
+
+---
+
 
 
 ```{r, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.height=8, fig.width=8, fig.retina=2}
@@ -31,10 +37,7 @@ source(here::here("01_src", "05_figures.R"))
 ```
 
 
-
-```{r, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.height=8, fig.width=8, fig.retina=2}
-
-```
+---
 
 
 
@@ -43,7 +46,4 @@ source(here::here("01_src", "05_figures.R"))
 ```
 
 
-
-```{r, include=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.height=8, fig.width=8, fig.retina=2}
-
-```
+---

@@ -29,3 +29,5 @@ penguins %>%
   fmt_number(columns = everything(),
              decimals = 0,
              sep_mark = "") -> tab_penguin_measure
+
+
